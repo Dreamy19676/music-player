@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เว็บฟังเพลงง่ายๆ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>เว็บฟังเพลงง่ายๆ</h1>
+
+  <div id="playlist">
+    <h2>Playlist</h2>
+    <ul>
+      <li onclick="playSong('song1.mp3')">Song 1</li>
+      <li onclick="playSong('song2.mp3')">Song 2</li>
+      <li onclick="playSong('song3.mp3')">Song 3</li>
+    </ul>
+  </div>
+
+  <audio id="audioPlayer" controls>
+    <source src="music/song1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const player = document.getElementById('audioPlayer');
+
+    function playSong(fileName) {
+      player.src = 'music/' + fileName;
+      player.play();
+    }
+  </script>
+</body>
+</html>
