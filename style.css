@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+#playlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#playlist li {
+  cursor: pointer;
+  margin: 10px 0;
+  color: blue;
+  text-decoration: underline;
+}
+
+#playlist li:hover {
+  color: darkblue;
+}
